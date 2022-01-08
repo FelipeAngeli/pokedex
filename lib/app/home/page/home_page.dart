@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pokedex/app/core/colors/colors.dart';
+import 'package:pokedex/app/widgets/middle/middle_widget.dart';
 import 'package:pokedex/app/widgets/top/top_widgets.dart';
 
 class HomePage extends StatelessWidget {
@@ -11,10 +12,13 @@ class HomePage extends StatelessWidget {
       backgroundColor: Colors.transparent,
       body: Container(
         alignment: Alignment.center,
-        decoration: const BoxDecoration(color: AppColors.pokeballRedBottom),
+        decoration: const BoxDecoration(
+          color: AppColors.pokeballRedBottom,
+        ),
         child: Stack(
           children: [
             TopWidget(),
+            MiddleWidget(),
           ],
         ),
       ),

@@ -5,14 +5,16 @@ import 'app/core/colors/colors.dart';
 import 'app/core/screen/animation_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     //Set defaults to system colors
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
       //statusBar
       statusBarColor: Colors.transparent,
       statusBarIconBrightness: Brightness.light,

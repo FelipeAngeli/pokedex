@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:pokedex/app/widgets/components/frame_lamp.dart';
-import 'package:pokedex/app/widgets/components/led.dart';
-import 'package:pokedex/app/widgets/components/top_side.dart';
+
+import 'components/frame_lamp.dart';
+import 'components/led.dart';
+import 'components/top_side.dart';
+import 'components/top_side_elevated.dart';
 
 class TopWidget extends StatelessWidget {
   const TopWidget({Key? key}) : super(key: key);
@@ -19,11 +21,11 @@ class TopWidget extends StatelessWidget {
         child: LayoutBuilder(builder: (ctx, cnst) {
           return Stack(
             children: [
-              // Positioned(
-              //   right: 0,
-              //   top: 0,
-              //   child: TopSideElevated(width: width, height: height),
-              // ),
+              Positioned(
+                right: 0,
+                top: 0,
+                child: TopSideElevated(width: width, height: height),
+              ),
               Positioned(
                 right: 0,
                 top: 0,

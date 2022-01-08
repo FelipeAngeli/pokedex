@@ -7,21 +7,21 @@ import 'package:flutter/material.dart';
 //--------------------------------------------------------------------//
 
 class AppColors {
-  static const Color black = const Color(0xff000000);
-  static const Color white = const Color(0xffFFFFFF);
-  static const Color background = const Color(0xff1B2634);
-  static const Color pokeballRedTop = const Color(0xffA51A17);
-  static const Color pokeballRedBottom = const Color(0xffE51D20);
-  static const Color pokeballWhiteTop = const Color(0xffFFFFFF);
-  static const Color pokeballWhiteBottom = const Color(0xffA19E9E);
+  static const Color black = Color(0xff000000);
+  static const Color white = Color(0xffFFFFFF);
+  static const Color background = Color(0xff1B2634);
+  static const Color pokeballRedTop = Color(0xffA51A17);
+  static const Color pokeballRedBottom = Color(0xffE51D20);
+  static const Color pokeballWhiteTop = Color(0xffFFFFFF);
+  static const Color pokeballWhiteBottom = Color(0xffA19E9E);
 
   //--------------------------------------------------------------------//
   //----------------------------Screen----------------------------------//
   //--------------------------------------------------------------------//
-  static const Color screen = const Color(0xff1E1E1E);
-  static const Color screenFrame = const Color(0xffDAE8EB);
-  static const Color screenFrameBorder = const Color(0xffE51D20);
-  static const Color screenButton = const Color(0xffE51D20);
+  static const Color screen = Color(0xff1E1E1E);
+  static const Color screenFrame = Color(0xffDAE8EB);
+  static const Color screenFrameBorder = Color(0xffE51D20);
+  static const Color screenButton = Color(0xffE51D20);
 
   //--------------------------------------------------------------------//
   //----------------------------Lamp------------------------------------//
@@ -34,17 +34,17 @@ class AppColors {
   static const Color lampStroke = Color(0xFFAD282A);
 
   //--------------------------------------------------------------------//
-  //----------------------------LedsIndicative------------------------------------//
+  //----------------------------LedsIndicative--------------------------//
   //--------------------------------------------------------------------//
   static const Color redLedInner = Color(0xffFF9282);
-  static const Color redLedOuter = const Color(0xffE0433F);
-  static const Color redLedBorder = const Color(0xffBC1F21);
-  static const Color yellowLedInner = const Color(0xffFEDB6A);
-  static const Color yellowLedOuter = const Color(0xffFABE17);
-  static const Color yellowLedBorder = const Color(0xffEA960A);
-  static const Color greenLedInner = const Color(0xffBDEAA7);
-  static const Color greenLedOuter = const Color(0xff52C153);
-  static const Color greenLedBorder = const Color(0xff5C743A);
+  static const Color redLedOuter = Color(0xffE0433F);
+  static const Color redLedBorder = Color(0xffBC1F21);
+  static const Color yellowLedInner = Color(0xffFEDB6A);
+  static const Color yellowLedOuter = Color(0xffFABE17);
+  static const Color yellowLedBorder = Color(0xffEA960A);
+  static const Color greenLedInner = Color(0xffBDEAA7);
+  static const Color greenLedOuter = Color(0xff52C153);
+  static const Color greenLedBorder = Color(0xff5C743A);
 
   //--------------------------------------------------------------------//
   //----------------------------BigButton-------------------------------//
@@ -163,4 +163,21 @@ class AppColors {
   static const Gradient LedGreenGradient = RadialGradient(
     colors: [Color(0xFFBDEAA7), Color(0xFF52C153)],
   );
+
+  //--------------------------------------------------------------------//
+  //----------------------------TopSide--------------------------------//
+  //--------------------------------------------------------------------//
+  static const Color topSideColor = Color(0xFFCC1416);
+  static const Color topSideElevatedColor = Color(0xFFA51A17);
+
+  //--------------------------------------------------------------------//
+  //--------------------------Screen Monitor----------------------------//
+  //--------------------------------------------------------------------//
+  static const Color screenBorderColor = Color(0xFFC4C4C4);
+  static const Color screenMonitorColor = Color(0xFF777474);
+
+  //--------------------------------------------------------------------//
+  //-------------------------------Hinger-------------------------------//
+  //--------------------------------------------------------------------//
+  static const Color hingeColor = Color(0xFFCC1416);
 }

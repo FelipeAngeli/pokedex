@@ -4,6 +4,8 @@ import 'package:pokedex/app/core/components/component.dart';
 import 'package:pokedex/app/home/page/home_page.dart';
 
 class AnimationPage extends StatefulWidget {
+  const AnimationPage({Key? key}) : super(key: key);
+
   @override
   _AnimationPageState createState() => _AnimationPageState();
 }
@@ -17,7 +19,7 @@ class _AnimationPageState extends State<AnimationPage>
   void initState() {
     super.initState();
     animationController = AnimationController(
-      duration: Duration(milliseconds: 1000),
+      duration: const Duration(milliseconds: 1000),
       vsync: this,
     );
     animationController.forward();
@@ -51,7 +53,7 @@ class _AnimationPageState extends State<AnimationPage>
             height: double.infinity,
             width: double.infinity,
             color: AppColors.background,
-            child: HomePage(), // chama tela
+            child: const HomePage(), // chama tela
           ),
           //TopPokeball
           Align(
@@ -113,7 +115,7 @@ class _AnimationPageState extends State<AnimationPage>
           //Button
           AnimatedBuilder(
             animation: animateSlide,
-            child: openButton(Size(100, 100)),
+            child: openButton(const Size(100, 100)),
             builder: (context, child) {
               return Transform.translate(
                 offset: Offset(0, -animateSlide.value),

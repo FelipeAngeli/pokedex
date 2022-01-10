@@ -13,7 +13,7 @@ class MiddleWidget extends StatelessWidget {
       children: [
         Positioned(
           left: size.width * 0.06,
-          bottom: size.height * 0.034,
+          bottom: size.height * 0.34,
           child: Screen(
             width: size.width,
             height: size.height,

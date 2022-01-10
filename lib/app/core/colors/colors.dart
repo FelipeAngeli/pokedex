@@ -173,11 +173,33 @@ class AppColors {
   //--------------------------------------------------------------------//
   //--------------------------Screen Monitor----------------------------//
   //--------------------------------------------------------------------//
-  static const Color screenBorderColor = Color(0xFFC4C4C4);
+  static const Color screenBorderColor = Color(0xffDAE8EB);
   static const Color screenMonitorColor = Color(0xFF777474);
 
   //--------------------------------------------------------------------//
   //-------------------------------Hinger-------------------------------//
   //--------------------------------------------------------------------//
   static const Color hingeColor = Color(0xFFCC1416);
+
+  //--------------------------------------------------------------------//
+  //---------------------------Start Button------------------------------//
+  //--------------------------------------------------------------------//
+
+  static const Color startButtonStartColor = Color(0xFF0F6594);
+  static const Color startButtonStartBorderColor = Color(0xFF3B557B);
+
+  //--------------------------------------------------------------------//
+  //---------------------------Green Button------------------------------//
+  //--------------------------------------------------------------------//
+
+  static const Color greenButtonColor = Color(0xFF49B15C);
+  static const Color greenButtonBorderColor = Color(0xFF5C743A);
+
+  //--------------------------------------------------------------------//
+  //---------------------------Action Button----------------------------//
+  //--------------------------------------------------------------------//
+  static const Color actionButtonUm = Color(0xFF18191A);
+  static const Color actionButtonDois = Color(0xFF5B6164);
+
+  static const Color teste = Color(0xffDAE8EB);
 }

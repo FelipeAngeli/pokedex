@@ -15,7 +15,7 @@ class ScreenBorder extends StatelessWidget {
               clipper: ScreenBorderClip(),
               child: Container(
                 decoration: BoxDecoration(
-                  color: AppColors.screenMonitorColor,
+                  color: AppColors.screenBorderColor,
                   borderRadius: BorderRadius.all(
                     Radius.circular(
                       constraints.maxWidth * 0.06,
@@ -30,6 +30,7 @@ class ScreenBorder extends StatelessWidget {
             Positioned(
               top: constraints.maxHeight * 0.07,
               right: (constraints.maxWidth - (constraints.maxWidth * 0.82)) / 2,
+              left: (constraints.maxWidth - (constraints.maxWidth * 0.82)) / 2,
               child: ScreenMonitor(
                 width: constraints.maxWidth,
                 height: constraints.maxHeight,
@@ -49,7 +50,6 @@ class ScreenBorderClip extends CustomClipper<Path> {
     final double maxX = size.width;
     final double maxY = size.height;
 
-    //contorno
     path
       ..lineTo(0, maxY - (maxX * 0.14))
       ..lineTo(maxX * 0.14, maxY)

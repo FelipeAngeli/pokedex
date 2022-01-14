@@ -36,7 +36,7 @@ class MyPainter1 extends CustomPainter {
     var paint4 = Paint()..color = const Color(0xffFFFFFF);
     var paintBoca = Paint()
       ..color = const Color(0xff000000)
-      ..strokeWidth = 1.0
+      ..strokeWidth = 1.5
       ..style = PaintingStyle.stroke;
     var paintCheek = Paint()..color = const Color(0xffF00506);
 
@@ -56,10 +56,10 @@ class MyPainter1 extends CustomPainter {
     //ORELHA ESQUERDA
 
     Path ear1 = Path()
-      ..addOval(Rect.fromLTWH(size.width * 0.13, size.height * 0.06,
-          size.width * 0.46, size.height * 0.14));
+      ..addOval(Rect.fromLTWH(size.width * 0.12, size.height * 0.05,
+          size.width * 0.42, size.height * 0.13));
     ear1 = ear1.transform(
-        _rotatePath(Offset(size.width * 0.13, size.height * 0.18), _rad(-176)));
+        _rotatePath(Offset(size.width * 0.13, size.height * 0.16), _rad(-176)));
 
     canvas.drawPath(ear1, paint3);
     canvas.drawPath(ear1, paint);
@@ -67,16 +67,16 @@ class MyPainter1 extends CustomPainter {
     //ORELHA DIREITA
     Path ear2 = Path()
       ..addOval(Rect.fromLTWH(size.width * 0.30, size.height * 0.7,
-          size.width * 0.46, size.height * 0.14));
+          size.width * 0.44, size.height * 0.14));
     ear2 = ear2.transform(
-        _rotatePath(Offset(size.width * 0.13, size.height * 0.18), _rad(176)));
+        _rotatePath(Offset(size.width * 0.13, size.height * 0.13), _rad(176)));
     canvas.drawPath(ear2, paint3);
     canvas.drawPath(ear2, paint);
 
     //CABEÇA
     Path head = Path()
       ..addOval(Rect.fromLTWH(size.width * 0.28, size.height * 0.34,
-          size.width * 0.53, size.height * 0.51));
+          size.width * 0.52, size.height * 0.50)); //mudei
 
     canvas.drawPath(head, paint);
     canvas.drawPath(head, paint2);
@@ -84,14 +84,14 @@ class MyPainter1 extends CustomPainter {
     //ORELHA ESQUERDA PARTE AMARELA
     Path ear1Y = Path()
       ..addOval(Rect.fromLTWH(size.width * 0.26, size.height * 0.01,
-          size.width * .34, size.height * 0.53));
+          size.width * .34, size.height * 0.54));
 
     Path ear1D = Path.combine(PathOperation.intersect, ear1Y, ear1);
     canvas.drawPath(ear1D, paint2);
 
-    //ORELHA ESQUERDA PARTE AMARELA
+    //ORELHA DIREITA PARTE AMARELA
     Path ear2Y = Path()
-      ..addOval(Rect.fromLTWH(size.width * 0.51, size.height * 0.01,
+      ..addOval(Rect.fromLTWH(size.width * 0.49, size.height * 0.01,
           size.width * 0.34, size.height * 0.53));
 
     Path ear2D = Path.combine(PathOperation.intersect, ear2Y, ear2);
@@ -118,7 +118,7 @@ class MyPainter1 extends CustomPainter {
 
     //BOCHECHCA DIREITA
     Path cheek2 = Path()
-      ..addOval(Rect.fromLTWH(size.width * 0.7, size.height * 0.64,
+      ..addOval(Rect.fromLTWH(size.width * 0.7, size.height * 0.63,
           size.width * 0.12, size.height * 0.17));
 
     Path diference2 = Path.combine(PathOperation.intersect, cheek2, head);
@@ -137,26 +137,26 @@ class MyPainter1 extends CustomPainter {
 
     //OLHO ESQUERDO
     Path leftEye1 = Path()
-      ..addOval(Rect.fromLTWH(size.width * 0.37, size.height * 0.50,
-          size.width * 0.09, size.height * 0.11));
+      ..addOval(Rect.fromLTWH(size.width * 0.37, size.height * 0.52,
+          size.width * 0.07, size.height * 0.09));
     canvas.drawPath(leftEye1, paint);
     canvas.drawPath(leftEye1, paint3);
 
     Path leftEye2 = Path()
-      ..addOval(Rect.fromLTWH(size.width * 0.40, size.height * 0.51,
-          size.width * 0.05, size.height * 0.05));
+      ..addOval(Rect.fromLTWH(size.width * 0.39, size.height * 0.52,
+          size.width * 0.048, size.height * 0.048));
     canvas.drawPath(leftEye2, paint4);
 
     //OLHO DIREITO
     Path rightEye1 = Path()
-      ..addOval(Rect.fromLTWH(size.width * 0.64, size.height * 0.50,
-          size.width * 0.09, size.height * 0.11));
+      ..addOval(Rect.fromLTWH(size.width * 0.65, size.height * 0.52,
+          size.width * 0.07, size.height * 0.09));
     canvas.drawPath(rightEye1, paint);
     canvas.drawPath(rightEye1, paint3);
 
     Path rightEye2 = Path()
       ..addOval(Rect.fromLTWH(size.width * 0.65, size.height * 0.52,
-          size.width * 0.05, size.height * 0.05));
+          size.width * 0.048, size.height * 0.048));
     canvas.drawPath(rightEye2, paint4);
 
     //NARIZ
@@ -168,10 +168,10 @@ class MyPainter1 extends CustomPainter {
     //BOCA
     Path mouth1 = Path()
       ..moveTo(size.width * 0.47, size.height * 0.64)
-      ..quadraticBezierTo(size.width * 0.5, size.height * 0.66,
+      ..quadraticBezierTo(size.width * 0.5, size.height * 0.68,
           size.width * 0.55, size.height * 0.64)
-      ..quadraticBezierTo(size.width * 0.59, size.height * 0.66,
-          size.width * 0.62, size.height * 0.65);
+      ..quadraticBezierTo(size.width * 0.59, size.height * 0.68,
+          size.width * 0.63, size.height * 0.65);
 
     canvas.drawPath(mouth1, paintBoca);
   }

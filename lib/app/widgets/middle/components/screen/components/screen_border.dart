@@ -28,7 +28,7 @@ class ScreenBorder extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: constraints.maxHeight * 0.07,
+              top: constraints.maxHeight * 0.10,
               right: (constraints.maxWidth - (constraints.maxWidth * 0.82)) / 2,
               left: (constraints.maxWidth - (constraints.maxWidth * 0.82)) / 2,
               child: ScreenMonitor(

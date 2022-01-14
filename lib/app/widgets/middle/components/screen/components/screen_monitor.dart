@@ -28,7 +28,7 @@ class ScreenMonitor extends StatelessWidget {
           ),
         ),
         Positioned(
-          bottom: -width * 0.08,
+          bottom: -width * 0.07,
           left: height * 0.13,
           child: const Pikachu(),
         )

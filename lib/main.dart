@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
 import 'app/core/colors/colors.dart';
 import 'app/core/screen/animation_page.dart';
 

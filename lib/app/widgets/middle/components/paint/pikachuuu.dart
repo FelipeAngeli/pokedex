@@ -16,7 +16,7 @@ class Pikachu extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomPaint(
       painter: MyPainter1(),
-      child: Container(
+      child: SizedBox(
         width: width,
         height: height,
       ),
@@ -46,7 +46,7 @@ class MyPainter1 extends CustomPainter {
       ..lineTo(size.width * 0.4, size.height * 0.45)
       ..lineTo(size.width * 0.4, size.height * 0.85)
       ..lineTo(size.width * 0.24, size.height * 0.75)
-      ..lineTo(size.width * 0.26, size.height * 0.60)
+      ..lineTo(size.width * 0.26, size.height * 0.61)
       ..lineTo(size.width * 0.12, size.height * 0.55)
       ..lineTo(size.width * 0.006, size.height * 0.18);
 
@@ -59,7 +59,7 @@ class MyPainter1 extends CustomPainter {
       ..addOval(Rect.fromLTWH(size.width * 0.12, size.height * 0.05,
           size.width * 0.42, size.height * 0.13));
     ear1 = ear1.transform(
-        _rotatePath(Offset(size.width * 0.13, size.height * 0.16), _rad(-176)));
+        _rotatePath(Offset(size.width * 0.13, size.height * 0.15), _rad(-176)));
 
     canvas.drawPath(ear1, paint3);
     canvas.drawPath(ear1, paint);

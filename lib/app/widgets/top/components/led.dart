@@ -19,13 +19,13 @@ class Led extends StatelessWidget {
 
     if (color == LedColor.green) {
       borderColor = AppColors.greenLedBorder;
-      gradient = AppColors.LedGreenGradient;
+      gradient = AppColors.ledGreenGradient;
     } else if (color == LedColor.red) {
       borderColor = AppColors.redLedBorder;
-      gradient = AppColors.LedRedGradient;
+      gradient = AppColors.ledRedGradient;
     } else {
       borderColor = AppColors.yellowLedBorder;
-      gradient = AppColors.LedYellowGradient;
+      gradient = AppColors.ledYellowGradient;
     }
     return Container(
       width: size,

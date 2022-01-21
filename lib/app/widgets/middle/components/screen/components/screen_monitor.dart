@@ -27,10 +27,11 @@ class ScreenMonitor extends StatelessWidget {
             borderRadius: BorderRadius.circular(heightMonitor * 0.06),
           ),
         ),
+        //TODO aqui o pikachu
         Positioned(
           bottom: -width * 0.07,
           left: height * 0.13,
-          child: const Pikachu(),
+          child: const Pikachu(), //<----  Aqui pikachu
         )
       ],
     );

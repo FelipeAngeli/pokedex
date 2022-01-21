@@ -15,7 +15,6 @@ class StartButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color color;
-    final Color colorBorder;
 
     switch (startButtonType) {
       case StartButtonType.select:
@@ -23,7 +22,6 @@ class StartButton extends StatelessWidget {
         break;
       default:
         color = AppColors.startButtonStartColor;
-        colorBorder = AppColors.startButtonStartBorderColor;
     }
     return Container(
       alignment: Alignment.center,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'components/hinge/hinge.dart';
+import 'components/hinge/hinge_left.dart';
 import 'components/screen/screen.dart';
 
 class MiddleWidget extends StatelessWidget {

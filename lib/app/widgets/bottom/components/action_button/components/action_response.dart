@@ -18,12 +18,12 @@ class ActionResponse extends StatelessWidget {
 
     return Align(
       alignment: alignment,
-      child: LayoutBuilder(builder: (ctx, cnst) {
+      child: LayoutBuilder(builder: (buildContext, context) {
         return Container(
           alignment: Alignment.center,
-          width: cnst.maxWidth / 3,
-          height: cnst.maxWidth / 3,
-          child: Icon(icon, size: cnst.maxWidth * .27),
+          width: context.maxWidth / 3,
+          height: context.maxWidth / 3,
+          child: Icon(icon, size: context.maxWidth * 0.27),
         );
       }),
     );

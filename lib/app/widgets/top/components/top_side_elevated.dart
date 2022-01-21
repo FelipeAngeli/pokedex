@@ -26,7 +26,6 @@ class TopSideElevated extends StatelessWidget {
             Color(0x20000000),
             AppColors.topSideElevatedColor,
           ],
-          stops: [.36, .41, .53, .58, .73],
         )),
       ),
     );

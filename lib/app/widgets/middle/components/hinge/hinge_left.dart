@@ -17,7 +17,7 @@ class Hinge extends StatelessWidget {
         Container(
           width: width * 0.09,
           height: height * 0.90,
-          color: AppColors.pokeballRedTop, //barra
+          color: AppColors.pokeballRedTop,
         ),
         ClipPath(
           clipper: HingeClip(),
@@ -26,9 +26,6 @@ class Hinge extends StatelessWidget {
             height: height * 0.90,
             decoration: const BoxDecoration(
               color: AppColors.hingeColor,
-              borderRadius: BorderRadius.vertical(
-                  //  top: Radius.circular(width * 0.5), //top
-                  ),
             ),
           ),
         ),
@@ -43,7 +40,6 @@ class HingeClip extends CustomClipper<Path> {
     Path path = Path();
     final double maxX = size.width;
     final double maxY = size.height;
-    final Radius radius = Radius.circular(maxX / 2);
 
     path
       ..lineTo(maxX, 0)

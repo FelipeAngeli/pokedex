@@ -12,13 +12,13 @@ class TopWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     final double width = size.width;
-    final double height = size.height * .24;
+    final double height = size.height * 0.24;
     return Align(
       alignment: Alignment.topCenter,
       child: SizedBox(
         width: width,
         height: height,
-        child: LayoutBuilder(builder: (ctx, cnst) {
+        child: LayoutBuilder(builder: (buildContext, context) {
           return Stack(
             children: [
               Positioned(
@@ -32,22 +32,22 @@ class TopWidget extends StatelessWidget {
                 child: TopSide(width: width, height: height),
               ),
               Positioned(
-                top: height * .17,
-                left: width * .08,
+                top: height * 0.17,
+                left: width * 0.08,
                 child: FrameLamp(width: width, height: height),
               ),
               Positioned(
-                left: width * .35,
-                top: height * .16,
+                left: width * 0.35,
+                top: height * 0.16,
                 child: Container(
-                  width: width * .15,
+                  width: width * 0.15,
                   alignment: Alignment.topCenter,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Led(size: width * .03, color: LedColor.red),
-                      Led(size: width * .03, color: LedColor.yellow),
-                      Led(size: width * .03, color: LedColor.green),
+                      Led(size: width * 0.03, color: LedColor.red),
+                      Led(size: width * 0.03, color: LedColor.yellow),
+                      Led(size: width * 0.03, color: LedColor.green),
                     ],
                   ),
                 ),

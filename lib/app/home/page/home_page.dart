@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
           color: AppColors.pokeballRedBottom,
         ),
         child: Stack(
-          children: [
+          children: const [
             TopWidget(),
             MiddleWidget(),
             BottomWidget(),

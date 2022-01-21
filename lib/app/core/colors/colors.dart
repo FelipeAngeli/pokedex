@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 //--------------------------------------------------------------------//
@@ -154,13 +152,13 @@ class AppColors {
   //--------------------------------------------------------------------//
 
   //gradient
-  static const Gradient LedRedGradient = RadialGradient(
+  static const Gradient ledRedGradient = RadialGradient(
     colors: [Color(0xFFFF9282), Color(0xFFE0433F)],
   );
-  static const Gradient LedYellowGradient = RadialGradient(
+  static const Gradient ledYellowGradient = RadialGradient(
     colors: [Color(0xFFFEDB6A), Color(0xFFFABE17)],
   );
-  static const Gradient LedGreenGradient = RadialGradient(
+  static const Gradient ledGreenGradient = RadialGradient(
     colors: [Color(0xFFBDEAA7), Color(0xFF52C153)],
   );
 

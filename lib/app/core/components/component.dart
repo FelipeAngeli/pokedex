@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:pokedex/app/core/colors/colors.dart';
 
 class Component {
-  topPokeballBackground(Size size) {
+  Widget topPokeballBackground(Size size) {
     return Container(
       height: size.height,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: LinearGradient(
           colors: [AppColors.pokeballRedTop, AppColors.pokeballRedBottom],
           begin: Alignment.topCenter,
@@ -15,11 +15,11 @@ class Component {
     );
   }
 
-  bottomPokeballBackground(Size size) {
+  Widget bottomPokeballBackground(Size size) {
     return Container(
       height: size.height,
       width: size.width,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: LinearGradient(
           colors: [AppColors.pokeballWhiteTop, AppColors.pokeballWhiteBottom],
           begin: Alignment.topCenter,
@@ -29,7 +29,7 @@ class Component {
     );
   }
 
-  borderTopSide() {
+  Widget borderTopSide() {
     return ClipPath(
       clipper: BorderTopSide(),
       child: Container(
@@ -39,7 +39,7 @@ class Component {
     );
   }
 
-  borderBottomSide() {
+  Widget borderBottomSide() {
     return ClipPath(
       child: ClipPath(
         clipper: BorderBottomSide(),
@@ -51,7 +51,7 @@ class Component {
     );
   }
 
-  openButton(Size size) {
+  Widget openButton(Size size) {
     return Container(
       height: size.height,
       width: size.width,
@@ -105,29 +105,29 @@ class BorderTopSide extends CustomClipper<Path> {
 class BorderBottomSide extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
-    var addClipCircle = Rect.fromCircle(
+    final addClipCircle = Rect.fromCircle(
       center: Offset(size.width * .5, size.height * 0),
       radius: size.height,
     );
-    var subtractClipCircle = Rect.fromCircle(
+    final subtractClipCircle = Rect.fromCircle(
       center: Offset(size.width * .5, size.height * 0),
       radius: size.height * .68,
     );
 
-    var rectBorderTopSide = Rect.fromCenter(
+    final rectBorderTopSide = Rect.fromCenter(
       center: Offset(size.width * .5, size.height * 0),
       height: 40,
       width: size.width,
     );
 
-    var arcRect = Rect.fromLTRB(
-      size.width * .405,
-      size.height * .26,
-      size.width * .60,
-      size.height,
-    );
+    // Rect arcRect = Rect.fromLTRB(
+    //   size.width * .405,
+    //   size.height * .26,
+    //   size.width * .60,
+    //   size.height,
+    // );
 
-    var path = Path()
+    final path = Path()
           ..addRect(rectBorderTopSide)
           ..addOval(addClipCircle)
           // ..fillType = PathFillType.evenOdd
